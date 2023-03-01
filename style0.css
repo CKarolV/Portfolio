@@ -1,0 +1,57 @@
+* {
+    background-image: linear-gradient(to left, rgb(99, 99, 132)  , navy, blueviolet) ;
+    opacity: 1.0; 
+    font-family: serif, sans-serif; 
+    font-size: 20px;
+    
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.imagAboutMe {
+    border-radius: 40%;
+    float: right;
+    clear: left;
+}
+
+input [type=text] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: white, green;
+    color: white;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/610/610413.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40 px;
+    margin: 8px o;
+
+}
+
+footer {
+    background-color: navy;
+    text-align: left;
+    padding: 10%;
+}
