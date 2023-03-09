@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+*,*:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+header {
+    background-color: #F1F1F1;
+    color: #01092b;
+    text-align: center;
+    padding: 120px;
+    font-size: 25px;
+}
+.heading1 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-fill-mode: both;
+
+    transform: translateX(-150px);
+}
+
+body {
+    background-color: navy;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    margin: 5px;
+    background: #01092b;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    'gallery gallery gallery gallery gallery gallery'
+    'left left middle middle right right'
+    'section section section section section section'
+    'footer footer footer footer footer footer';
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: 300px;
+}
+
+
+.galleryBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.galleryBoxOuter{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transition: all 1s ease-out;
+    transform: perspective(1000px) rotateX(-8deg) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.galleryBoxIn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+.galleryBoxIn:nth-child(1){transform: rotateY(0deg) translateZ(450px);}
+.galleryBoxIn:nth-child(2){transform: rotateY(40deg) translateZ(450px);}
+.galleryBoxIn:nth-child(3){transform: rotateY(80deg) translateZ(450px);}
+.galleryBoxIn:nth-child(4){transform: rotateY(120deg) translateZ(450px);}
+.galleryBoxIn:nth-child(5){transform: rotateY(160deg) translateZ(450px);}
+.galleryBoxIn:nth-child(6){transform: rotateY(200deg) translateZ(450px);}
+.galleryBoxIn:nth-child(7){transform: rotateY(240deg) translateZ(450px);}
+.galleryBoxIn:nth-child(8){transform: rotateY(280deg) translateZ(450px);}
+.galleryBoxIn:nth-child(9){transform: rotateY(320deg) translateZ(450px);}
+
+.gallery {
+    grid-area: gallery;
+    background-color: #F1F1F1;
+    color: #01092b;
+    text-align: center;
+    padding: 300px;
+    font-size: 25px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+    
+
+    /* Barra de navegación, enlaces */
+.topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Enlaces - cambio de color en hover */
+.topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+
+.column {
+        /* float: left;*/
+        width: 33.33%;
+        }
+        
+        /* Borrar flota después de las columnas */ /*
+.row::after {
+        content: "";
+        display: table;
+        clear: both;
+        } */
+ @media screen and (max-width: 600px) {
+
+    .column {
+        width: 100%;
+              }
+    }
+
+@media (max-width: 600px) {
+     .grid-container  {
+         grid-template-areas: 
+            'gallery gallery gallery gallery gallery gallery'
+            'left left left left left left' 
+            'middle middle middle middle middle middle' 
+            'right right right right right right' 
+            'section section section section section section'
+            'footer footer footer footer footer footer';
+     }
+    }
+    
+.section{
+     grid-area: section;
+     background-color: #7f0685;
+     padding: 100px;
+     text-align: center
+        }
+
+footer {
+    background-color: navy;
+    text-align: left;
+    padding: 10%;
+}
+.footer {
+    grid-area: footer;
+}
+    
