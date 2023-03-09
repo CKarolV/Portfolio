@@ -1,0 +1,250 @@
+* {
+    background-image: linear-gradient(to left, rgb(1, 1, 29)  , navy, blueviolet) ;
+    opacity: 1.0; 
+    box-sizing: border-box;
+}
+body {
+    background-color: transparent;
+}
+
+.Hero {
+    position: relative;
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    font-size: 45px;
+    margin: 30px;
+    padding: 64px;
+    border-radius: 15px 50px;
+    color: #ffffff;
+    opacity: 0.6
+}
+
+.nameSpan{
+    color: white;
+    font-size: 60px ;
+}
+
+.imagHero {
+    width: 100%;
+    height: auto;
+}
+
+.sheet1, .sheet2,
+.sheet3, .sheet4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: serif, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.sheet:nth-child(1) {
+    background-image: url(imag/fondo.jpg);
+    background-size: cover;
+}
+
+.sheet:nth-child(2) {
+    background-color: darkorange;
+}
+
+.sheet :nth-child(3) {
+    height: 400px;
+    background-image: url(imag/images5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sheet:nth-child(4) {
+    background-color: gainsboro;
+}
+
+
+.div1 {
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 60px;
+    color: white;
+    text-align: right;
+    text-shadow: 1px 1px 2px black 0 0 25px rgb(1, 1, 69) 0 0 5px darkblue ;
+}
+
+.imagAboutMe {
+    border-radius: 45%;
+    padding: 16px;
+    float: right;
+    clear: left;
+}
+
+
+
+.textAboutMe {
+    font-family: serif, sans-serif;
+    font: italic;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    text-align-last: right;
+    padding: 70px; /*verificar espacio entre text e imag*/
+    
+
+}
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4c66af;
+    color: white;
+}
+
+.div2 {
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent;
+}
+
+
+.gallery {
+    align-content: left;
+    justify-content: left;
+    border: 1px solid #ccc; 
+
+}
+
+.gallery:hover{
+    border: 1px solid #777;
+}
+
+.rightcolumn {   
+    float: left;
+    clear: right;
+    width: 75%;
+    
+}
+
+.leftcolumn {
+    float: left;
+    clear: left;
+    width: 25%;
+    
+    padding-left: 20px;
+    
+ }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+
+h3 {
+    font-size: 60px;
+    color: white;
+}
+
+.imagJs, .imagHtml,
+.imagCss {
+    display: inline-block;
+    flex-direction: row;
+    width: 180px;
+    height: 180px;
+    max-width: auto;
+    background-color: black;
+}
+
+.blog, .projectGame {
+    direction:inline-block;
+    max-width: auto;
+    width: 300px;
+    height: 300px;
+
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+      
+  }
+  
+
+.social {
+    box-sizing: border-box;
+    display: inline;
+    float: right;
+    clear: left;
+    width: 48px;
+    height: 48px;
+}
+
+.imagFace, .imagYoutube,
+.imagLinkedin, .imagInstagram {
+    width: 26px;
+    height: 26px;
+    max-width: auto;
+    background-color: transparent;
+    
+}
+
+footer {
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 26px;
+    padding: 10%;
+    
+}
